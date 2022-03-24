@@ -1,0 +1,138 @@
+{
+   "success":true,
+   "content":{
+      "data":[
+         {
+            "ops":[
+               {
+                  "insert":"For a proper understanding of the concept of Transfer Pricing, let’s use a hypothetical holding company called XYZ Holdings.\n\nXYZ Holdings Plc has two subsidiaries: ABC Ltd and DEF Ltd. ABC Ltd’s business is to make movies with iconic, Disney-like characters, while DEF Ltd’s business is to make toys of iconic characters for sale to children.\n\n"
+               },
+               {
+                  "insert":{
+                     "image":"http://www.e-nuage.com/wp-content/uploads/2016/10/toy-story-1030x495.jpg"
+                  }
+               },
+               {
+                  "insert":"\n\nBoth subsidiaries depend on each other. ABC Ltd licences the intellectual property (IP) of its iconic characters to DEF Ltd, while DEF Ltd remits a 10% cut of its toy sale revenue to ABC.\n\nRemember that"
+               },
+               {
+                  "attributes":{
+                     "bold":true
+                  },
+                  "insert":" ABC and DEF are owned by the same company"
+               },
+               {
+                  "insert":" -- XYZ Holdings. Thus, "
+               },
+               {
+                  "attributes":{
+                     "bold":true
+                  },
+                  "insert":"the amount that ABC Ltd charges DEF for its IP is called “transfer price”"
+               },
+               {
+                  "insert":". That transaction involving the transfer price is called “"
+               },
+               {
+                  "attributes":{
+                     "bold":true
+                  },
+                  "insert":"transfer pricing"
+               },
+               {
+                  "insert":"”.\n\n"
+               },
+               {
+                  "attributes":{
+                     "bold":true
+                  },
+                  "insert":"Transfer pricing is an intra-company trade which may be for tangible or intangible (e.g. IP) goods or services"
+               },
+               {
+                  "insert":".\n\n"
+               },
+               {
+                  "insert":{
+                     "image":"https://i1.wp.com/brevetonline.com/wp-content/uploads/2016/03/TP.jpg?resize=768%2C544&ssl=1"
+                  }
+               },
+               {
+                  "insert":"\n\n"
+               },
+               {
+                  "attributes":{
+                     "bold":true
+                  },
+                  "insert":"Why then are tax authorities bothered about transfer pricing?"
+               },
+               {
+                  "insert":"\nThis is because the transfer price of these transactions could affect how much tax a subsidiary can pay.\nFor instance, for the fiscal year 2020, ABC Ltd made N120,000 profit on revenue of N200,000 while DEF made N300,000 profit on revenue of N700,000.\n\nFrom the N300,000 profit, DEF then pays ABC N100,000 for the cost of IP. ABC Ltd now has a profit of N220,000 (i.e. N120,000 + N100,000) while DEF now has a profit of N200,000 (i.e. N300,000 - N100,000).\n\nThis means that ABC Ltd would most likely have to pay more corporate tax than DEF Ltd since it earns more profit.\n\n"
+               },
+               {
+                  "insert":{
+                     "image":"https://www.fraserinstitute.org/sites/default/files/lifetime-tax-burden-for-canadians-from-federal-debt-accumulation.jpg"
+                  }
+               },
+               {
+                  "insert":"\n\nBut what if ABC Ltd is a subsidiary company that was incorporated in "
+               },
+               {
+                  "attributes":{
+                     "bold":true
+                  },
+                  "insert":"Malta"
+               },
+               {
+                  "insert":" where the corporate tax rate is 5%, for instance, while DEF Ltd is incorporated in "
+               },
+               {
+                  "attributes":{
+                     "bold":true
+                  },
+                  "insert":"Nigeria "
+               },
+               {
+                  "insert":"where the corporate tax rate is 30%. On the surface, DEF earned N200k profit while ABC made N220k profit. If they are taxed that way, DEF would pay N60k as tax in Nigeria (i.e. 30/100 X N200k), while ABC would pay N11k as tax in Malta (i.e. 5/100 X N120k). Together, XYZ Holdings would pay N71k as tax (i.e. DEF’s N60k + ABC’s N11k tax).\nWhat if XYZ Holdings saw the huge difference between the tax ABC paid compared to what DEF paid, even when ABC made more revenue, and then decided that they want to further lower their tax bill, what can they do?\n\nFor that “IP cost”, ABC Ltd can simply jack up the price and charge DEF Ltd N250k for IP. With this, DEF’s profit would now be N50k (i.e. N300k initial profit minus N250k IP charge), while ABC’s profit would be N350k (i.e. 100k initial profit + N250k IP profit).\n\nNow, on N350k profit, in Malta, ABC would pay N17,500 as tax (i.e. 5/100 X 350k). In Nigeria, on 50k profit, DEF would pay N15,000 tax (i.e. 30/100 X N50k). In total, XYZ’s tax bill would be N32,500, a huge drop compared to the N71k they paid earlier.\n\nThus, XYZ Holdings is happy because it gets to pay less tax. Malta’s tax authority is also happy because it gets to earn N17,500 instead of N11k as tax from ABC.\n\n"
+               },
+               {
+                  "insert":{
+                     "image":"https://media.premiumtimesng.com/wp-content/files/2017/03/FIRS-Office.jpg"
+                  }
+               },
+               {
+                  "insert":"\n\nBut here’s Nigeria’s tax authority (FIRS/FIRB) that now gets to earn N15k rather than N60k as tax from DEF Ltd. The FIRS would definitely not be happy about this. Consequently, it decided to get Nigeria’s National Assembly to enact transfer pricing laws that prevent XYZ Holdings from arbitrarily jack up or lowering the transfer price of intra-company trade such as that IP licence trade.\n\nTransfer pricing lawyers thus exist to ensure compliance with transfer pricing laws while still helping XYZ pay the lowest tax bill legally possible.\n\nNote: "
+               },
+               {
+                  "attributes":{
+                     "bold":true
+                  },
+                  "insert":"transfer pricing only affects the “taxable profit” of a company"
+               },
+               {
+                  "insert":". So, if DEF Ltd, for instance, makes N300k profit but is entitled to some tax deductions worth N50k, its taxable profit would be N250k rather than N300k. It’s from that N250k that the IP charge can be further subtracted to arrive at the amount to levy 30% corporate tax on.\n\nAlso note: "
+               },
+               {
+                  "attributes":{
+                     "bold":true
+                  },
+                  "insert":"“transfer price” is not a tax/type of tax"
+               },
+               {
+                  "insert":". Rather, "
+               },
+               {
+                  "attributes":{
+                     "bold":true
+                  },
+                  "insert":"it is the price of an intra-company transaction designed to reduce the tax bill"
+               },
+               {
+                  "insert":" to be paid."
+               }
+            ]
+         }
+      ],
+      "totalNumberOfNotes":1351
+   },
+   "message":"All notes."
+}

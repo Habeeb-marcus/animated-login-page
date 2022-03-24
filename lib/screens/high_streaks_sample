@@ -1,0 +1,124 @@
+import 'dart:io';
+import 'dart:typed_data';
+
+import 'package:flutter/material.dart';
+import 'package:image_gallery_saver/image_gallery_saver.dart';
+import 'package:mEd/components/general/buttons/full_button.dart';
+import 'package:mEd/components/general/buttons/outline_med_button.dart';
+import 'package:mEd/helpers/colors.dart';
+import 'package:mEd/helpers/size_calculator.dart';
+import 'package:path_provider/path_provider.dart';
+import 'package:permission_handler/permission_handler.dart';
+import 'package:provider/provider.dart';
+import 'package:share_plus/share_plus.dart';
+import 'package:screenshot/screenshot.dart';
+import 'package:mEd/screens/imageStreak/image_streak.dart';
+// import 'package:permission_handler/permission_handler.dart';
+
+import '../../providers/userProvider.dart';
+
+class HighStreakBottomSheet extends StatefulWidget {
+  const HighStreakBottomSheet({
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  State<HighStreakBottomSheet> createState() => _HighStreakBottomSheetState();
+}
+
+class _HighStreakBottomSheetState extends State<HighStreakBottomSheet> {
+  final controller = ScreenshotController();
+
+  get pixelRatio => MediaQuery.of(context).devicePixelRatio;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: EdgeInsets.symmetric(
+        horizontal: sizer(true, 15, context),
+        vertical: sizer(true, 28, context),
+      ),
+      decoration: BoxDecoration(
+        color: AppColors.greenColor,
+        borderRadius: BorderRadius.only(
+          topLeft: Radius.circular(sizer(true, 24, context)),
+          topRight: Radius.circular(sizer(true, 24, context)),
+        ),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Text(
+            "⏱🔥Study Streak Rank (updated 8pm WAT daily)",
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              fontSize: sizer(true, 13, context),
+              color: AppColors.white,
+              fontWeight: FontWeight.w700,
+            ),
+          ),
+          SizedBox(
+            height: sizer(false, 10, context),
+          ),
+          Text(
+            "🙌🏼 As of yesterday, you’re in the Top 99.0000000011% of learners, by study streaks, up from Top 99.0000000019% yesterday, making it 3 consecutive days of growth. \nKeep learning and gaining streak grounds! 💪🏼 ",
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              height: 21.5 / 13,
+              fontSize: sizer(true, 13, context),
+              color: AppColors.white,
+              fontWeight: FontWeight.w300,
+            ),
+          ),
+          SizedBox(
+            height: sizer(false, 26, context),
+          ),
+          FullButton(
+              buttonOnlineColor: AppColors.white,
+              onlineTextColor: AppColors.greenColor,
+              buttonText: "Share Update With Friends 💃🏼",
+              buttonFunction: () async {
+                print('image captured');
+                final image = await controller.captureFromWidget(
+                  MaterialApp(
+                      debugShowCheckedModeBanner: false,
+                      builder: (context, child) {
+                        return getImageStreak(context);
+                      }),
+                );
+
+                saveAndShare(image);
+                // saveAndShare(image);
+              }),
+        ],
+      ),
+    );
+  }
+
+  Future saveAndShare(Uint8List bytes) async {
+  
+    String fileName = DateTime.now().microsecondsSinceEpoch.toString();
+    final directory = await getApplicationDocumentsDirectory();
+    final imagePath =
+        await File('${directory.path}/image$fileName.png').create();
+    final _file = await imagePath.writeAsBytes(bytes);
+    print(_file.path.toString());
+
+    await Share.shareFiles([_file.path]);
+
+  }
+
+  Future<String> saveImage(Uint8List bytes) async {
+    await [Permission.storage].request();
+    final time = DateTime.now()
+        .toIso8601String()
+        .replaceAll('.', '_')
+        .replaceAll(':', '_');
+    final name = 'StudyStreak_$time';
+    final result = await ImageGallerySaver.saveImage(bytes, name: name);
+
+    return result['filePath'];
+  }
+}
+
