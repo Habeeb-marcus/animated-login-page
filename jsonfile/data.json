@@ -1,0 +1,25 @@
+[
+    {
+    "folder": "folder1",
+        "id": "1",
+        "title": "Introduction to the Startup Ecotec system",
+        "streaks": "2days ago ⏱🔥 230k study streak",
+        "image": "assets/images/folder1.png",
+        "type": "(Updated) folder"
+
+},
+   { "folder": "folder2",
+        "id": "2",
+        "title": "How to get away with murder",
+        "streaks": "2wk ago ⏱🔥 30k study streak",
+        "image": "assets/images/folder2.png",
+        "type": "(Edited) folder"
+    },
+ {   "folder": "folder3",
+    "id": "3",
+        "title": "Introduction to DAOs, DeFi, Bitcoin, Crypto, Decentralised Internet, Bitcoin, Ethereum, ADA.",
+        "streaks": "5days ago ⏱🔥 400k study streak",
+        "image": "assets/images/folder3.png",
+        "type": "folder"
+    }
+]

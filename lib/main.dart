@@ -1,6 +1,6 @@
-// // import 'dart:html';
 
 import 'package:flutter/material.dart';
+import 'screens/home_page.dart';
 import 'screens/login/login.dart';
 import 'screens/files/files.dart';
 import 'screens/paywall/paywall.dart';
@@ -12,14 +12,13 @@ void main() {
   runApp( MaterialApp(
     debugShowCheckedModeBanner: false,
     color: Colors.white,
-    home:  Files()
+    home:  Home()
   ));
 }
 
 // import 'dart:convert';
 // import 'dart:io';
 // import 'dart:async';
-// import 'package:flutter/foundation.dart';
 // import 'package:flutter/services.dart';
 // import 'package:http/http.dart' as http;
 
@@ -28,12 +27,14 @@ void main() {
 // import 'package:flutter_svg/svg.dart';
 // import 'package:login_page/providers/note.dart';
 // import 'package:flutter_quill/flutter_quill.dart' hide Text, Style;
+// import 'package:webview_flutter/webview_flutter.dart';
 // import 'helpers/colors.dart';
 // import 'helpers/size_calculator.dart';
-// import 'package:flutter_inappwebview/flutter_inappwebview.dart';
+// // import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 // import 'package:webview_flutter_plus/webview_flutter_plus.dart';
+// import 'package:webview_flutter/webview_flutter.dart';
 
-// import 'package:flutter_widget_from_html/flutter_widget_from_html.dart';
+// // import 'package:flutter_widget_from_html/flutter_widget_from_html.dart';
 
 // Future<String> fetchNote() async {
 //   var id;
@@ -119,7 +120,7 @@ void main() {
 //   String data = "i am here working";
 
 //   // QuillController? _controller;
-//    late WebViewPlusController _controller;
+//    late WebViewController _controller;
 //   final FocusNode _focusNode = FocusNode();
 
 //   set height(double height) {}
@@ -315,7 +316,7 @@ void main() {
 //                 Container(
 //                   width: width,
 //                   height: 500,
-//                   child: WebViewPlus(
+//                   child: WebView(
 //                     javascriptMode: JavascriptMode.unrestricted,
 //                         onPageFinished: (url) {
 //                       _controller.getHeight().then((double height) {
@@ -332,7 +333,7 @@ void main() {
 //                     //         updateHeight();
 //                     //       })
 //                     // ]),
-//                     onWebViewCreated: (WebViewPlusController controller) {
+//                     onWebViewCreated: ( controller) {
 //                       controller.loadString(
 //                         r"""
 //              <html lang="en">

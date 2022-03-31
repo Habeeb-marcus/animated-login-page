@@ -1,17 +1,15 @@
 // import 'package:flutter/gestures.dart';
 // import 'package:flutter/material.dart';
 // import 'package:flutter_svg/flutter_svg.dart';
-// import 'package:mEd/components/dialogs/alert_dialog.dart';
-// import 'package:mEd/helpers/colors.dart';
-// import 'package:mEd/helpers/extensions.dart';
-// import 'package:mEd/helpers/size_calculator.dart';
-
-// import 'package:mEd/helpers/router.dart';
-// import 'package:mEd/models/folder_model.dart';
-
+// import '../component/dialogs/alert_dialog.dart';
 // import '../helpers/colors.dart';
+// import '../helpers/extensions.dart';
 // import '../helpers/size_calculator.dart';
-// import '../more/custom_dialog.dart';
+
+// import '../helpers/router.dart';
+// import '../models/folder_model.dart';
+
+// // import '../more/custom_dialog.dart';
 
 // class FolderCard extends StatefulWidget {
 //   final bool disabled;
